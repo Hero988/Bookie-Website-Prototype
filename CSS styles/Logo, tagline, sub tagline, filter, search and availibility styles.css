@@ -1,4 +1,6 @@
 ﻿
+
+
 /* Styles for mobile (Iphone 6/7/8 plus)*/
 @media (max-width: 768px) {
 	body {
@@ -785,6 +787,11 @@ display: none;
     .availability-text {
         font-size: 11px;
     }
+}
+
+
+@media (max-width: 992px) {
+
 }
 
 

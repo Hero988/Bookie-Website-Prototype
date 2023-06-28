@@ -17,77 +17,7 @@
     
 
 <!-- The div that contains the logo, tagline, sub tagline, filter, search and availibility divs for mobile -->
-<section class="logo-tagline-subtagline-filter-search-availibility-container hide-desktop">     
-    <div class="logo-tagline-wrapper">
-        <!-- The logo div -->
-        <div class="logo"> <!-- The logo class -->
-            <img src="images/logo/Booki.png" alt="Logo"> <!-- The logo image -->
-        </div>
-
-        <!-- 'tagline' and 'subtagline' div -->
-        <div class="tagline-container"> <!-- the tagline/subtagline container -->
-            <!-- the tagline text (for desktop) -->
-            <div class="tagline hide-phone">Find a place for your dream vacation</div>
-            <!-- the tagline text (for phone) -->
-            <div class="tagline hide-desktop">Find a place for your dream <br> vacation</div>
-            <div class="subtagline">Downtown or in nature</div> <!-- the subtgaline text -->
-        </div>
-
-        <!-- 'search-container' that will contain our search form -->
-        <div class="search-container">
-            <form>
-             <!-- 'search-field' div to wrap input and button -->
-             <div class="search-field">
-                <i class="fa-solid fa-location-dot search-icon"></i> <!-- Icon link -->
-                <input type="text" id="search-input" name="town" placeholder="Marseille, France">
-                <button type="submit" id="search-button" class="hide-phone">Search</button> <!-- hidding when the viewport is between (min-width: 767px) and (max-width: 991px) -->
-                <button type="submit" id="search-button" class="hide-desktop"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> <!-- hidding when the viewport is (min-width: 992px)-->
-              </div>
-            </form>
-        </div>
-
-        <!-- 'filter-container' that will contain our filter options -->
-        <div class="filter-container">
-            <span class="filter-title">Filters</span>
-            <div class="filter-option filter-option-Low-cost">
-                <i class="fa-solid fa-money-bill-wave filter-icon"></i> <!-- Icon link -->
-                <span class="filter-text">Low cost</span>
-            </div>
-            <div class="filter-option filter-option-Family-friendly">
-                <i class="fa-solid fa-child-reaching filter-icon"></i>
-                <span class="filter-text">Family-friendly</span>
-            </div>
-            <div class="filter-option filter-option-Romantic">
-                <i class="fa-solid fa-heart filter-icon"></i>
-                <span class="filter-text">Romantic</span>
-            </div>
-            <div class="filter-option filter-option-Pets-allowed">
-                <i class="fa-solid fa-dog filter-icon"></i>
-                <span class="filter-text">Pets allowed</span>
-            </div>
-         </div>
-
-         <!-- availability div -->
-        <div class="availability-container">
-            <i class="fa-solid fa-info availability-icon"></i>
-            <span class="availability-text">More than 500 accommodations are available in this <br>city</span>
-        </div>
-
-    </div>
-
-    <!-- The 'text-container' div -->
-    <div class="text-container">
-        <div class="text-item" id="accommodation">
-            <a href="#accommodation-section">Accommodations</a>
-        </div>
-        <div class="text-item" id="activities">
-            <a href="#activities-section">Activities</a>
-        </div>
-    </div>
-</section>
-
-<!-- The div that contains the logo, tagline, sub tagline, filter, search and availibility divs for desktops-->
-<section class="logo-tagline-subtagline-filter-search-availibility-container hide-phone">     
+<section class="logo-tagline-subtagline-filter-search-availibility-container">     
     <div class="logo-tagline-wrapper">
         <!-- The logo div -->
         <div class="logo"> <!-- The logo class -->
@@ -668,7 +598,7 @@
 </section>
 
 <!-- Footer for mobile -->
-<footer style="background-color: #F2F2F2;" class="hide-desktop">
+<footer style="background-color: #F2F2F2;" >
     <div class="footer-container">
       <div class="footer-col footer-col-About">
         <!-- First column -->
@@ -693,33 +623,6 @@
       </div>
     </div>
   </footer>
-
-<!-- Footer for desktop -->
-<footer style="background-color: #F2F2F2;" class="hide-phone">
-  <div class="footer-container">
-    <div class="footer-col">
-      <!-- First column -->
-      <p class="bolded footer-header">About</p>
-      <p>Site Map</p>
-      <p>General Terms and Conditions</p>
-      <p>Data and Privacy</p>
-    </div>
-
-    <div class="footer-col">
-      <!-- Second column -->
-      <p class="bolded footer-header">Our Accommodations</p>
-      <p>Quality Assessment</p>
-      <p>You have a hotel?</p>
-    </div>
-
-    <div class="footer-col">
-      <!-- Third column -->
-      <p class="bolded footer-header">Assistance</p>
-      <p>Help Desk</p>
-      <p>Contact Us</p>
-    </div>
-  </div>
-</footer>
 
 
 
