@@ -1,0 +1,730 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://kit.fontawesome.com/c3ee9dbdfd.js" crossorigin="anonymous"></script> <!-- Font Awsome Inport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- The 'viewport' meta tag is used for responsive web design. It controls how your web page looks on different devices by setting the viewable area (viewport) of the web browser. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!-- Link to the raleway font from google fonts -->
+    <link rel="stylesheet" type="text/css" href="CSS styles/Logo, tagline, sub tagline, filter, search and availibility styles.css"> <!-- Link to the Logo, tagline, sub tagline, filter, search and availibility styles CSS file -->
+    <link rel="stylesheet" type="text/css" href="CSS styles/accommodation section Styles.css"> <!-- accommodation section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS styles/Most Popular Section Styles.css"> <!-- Most Popular Section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS styles/Activities in Marseille Section Styles.css"> <!-- Most Popular Section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS styles/Footer Styles.css"> <!-- Most Popular Section Styles file -->
+
+</head>
+<body>
+    
+
+<!-- The div that contains the logo, tagline, sub tagline, filter, search and availibility divs for mobile -->
+<section class="logo-tagline-subtagline-filter-search-availibility-container hide-desktop">     
+    <div class="logo-tagline-wrapper">
+        <!-- The logo div -->
+        <div class="logo"> <!-- The logo class -->
+            <img src="images/logo/Booki.png" alt="Logo"> <!-- The logo image -->
+        </div>
+
+        <!-- 'tagline' and 'subtagline' div -->
+        <div class="tagline-container"> <!-- the tagline/subtagline container -->
+            <!-- the tagline text (for desktop) -->
+            <div class="tagline hide-phone">Find a place for your dream vacation</div>
+            <!-- the tagline text (for phone) -->
+            <div class="tagline hide-desktop">Find a place for your dream <br> vacation</div>
+            <div class="subtagline">Downtown or in nature</div> <!-- the subtgaline text -->
+        </div>
+
+        <!-- 'search-container' that will contain our search form -->
+        <div class="search-container">
+            <form>
+             <!-- 'search-field' div to wrap input and button -->
+             <div class="search-field">
+                <i class="fa-solid fa-location-dot search-icon"></i> <!-- Icon link -->
+                <input type="text" id="search-input" name="town" placeholder="Marseille, France">
+                <button type="submit" id="search-button" class="hide-phone">Search</button> <!-- hidding when the viewport is between (min-width: 767px) and (max-width: 991px) -->
+                <button type="submit" id="search-button" class="hide-desktop"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> <!-- hidding when the viewport is (min-width: 992px)-->
+              </div>
+            </form>
+        </div>
+
+        <!-- 'filter-container' that will contain our filter options -->
+        <div class="filter-container">
+            <span class="filter-title">Filters</span>
+            <div class="filter-option filter-option-Low-cost">
+                <i class="fa-solid fa-money-bill-wave filter-icon"></i> <!-- Icon link -->
+                <span class="filter-text">Low cost</span>
+            </div>
+            <div class="filter-option filter-option-Family-friendly">
+                <i class="fa-solid fa-child-reaching filter-icon"></i>
+                <span class="filter-text">Family-friendly</span>
+            </div>
+            <div class="filter-option filter-option-Romantic">
+                <i class="fa-solid fa-heart filter-icon"></i>
+                <span class="filter-text">Romantic</span>
+            </div>
+            <div class="filter-option filter-option-Pets-allowed">
+                <i class="fa-solid fa-dog filter-icon"></i>
+                <span class="filter-text">Pets allowed</span>
+            </div>
+         </div>
+
+         <!-- availability div -->
+        <div class="availability-container">
+            <i class="fa-solid fa-info availability-icon"></i>
+            <span class="availability-text">More than 500 accommodations are available in this <br>city</span>
+        </div>
+
+    </div>
+
+    <!-- The 'text-container' div -->
+    <div class="text-container">
+        <div class="text-item" id="accommodation">
+            <a href="#accommodation-section">Accommodations</a>
+        </div>
+        <div class="text-item" id="activities">
+            <a href="#activities-section">Activities</a>
+        </div>
+    </div>
+</section>
+
+<!-- The div that contains the logo, tagline, sub tagline, filter, search and availibility divs for desktops-->
+<section class="logo-tagline-subtagline-filter-search-availibility-container hide-phone">     
+    <div class="logo-tagline-wrapper">
+        <!-- The logo div -->
+        <div class="logo"> <!-- The logo class -->
+            <img src="images/logo/Booki.png" alt="Logo"> <!-- The logo image -->
+        </div>
+
+        <!-- 'tagline' and 'subtagline' div -->
+        <div class="tagline-container"> <!-- the tagline/subtagline container -->
+            <!-- the tagline text (for desktop) -->
+            <div class="tagline hide-phone">Find a place for your dream vacation</div>
+            <!-- the tagline text (for phone) -->
+            <div class="tagline hide-desktop">Find a place for your dream <br> vacation</div>
+            <div class="subtagline">Downtown or in nature</div> <!-- the subtgaline text -->
+        </div>
+
+        <!-- 'search-container' that will contain our search form -->
+        <div class="search-container">
+            <form>
+             <!-- 'search-field' div to wrap input and button -->
+             <div class="search-field">
+                <i class="fa-solid fa-location-dot search-icon"></i> <!-- Icon link -->
+                <input type="text" id="search-input" name="town" placeholder="Marseille, France">
+                <button type="submit" id="search-button" class="hide-phone">Search</button> <!-- hidding when the viewport is between (min-width: 767px) and (max-width: 991px) -->
+                <button type="submit" id="search-button" class="hide-desktop"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> <!-- hidding when the viewport is (min-width: 992px)-->
+              </div>
+            </form>
+        </div>
+
+        <!-- 'filter-container' that will contain our filter options -->
+        <div class="filter-container">
+            <span class="filter-title">Filters</span>
+            <div class="filter-option filter-option-Low-cost">
+                <i class="fa-solid fa-money-bill-wave filter-icon"></i> <!-- Icon link -->
+                <span class="filter-text">Low cost</span>
+            </div>
+            <div class="filter-option filter-option-Family-friendly">
+                <i class="fa-solid fa-child-reaching filter-icon"></i>
+                <span class="filter-text">Family-friendly</span>
+            </div>
+            <div class="filter-option filter-option-Romantic">
+                <i class="fa-solid fa-heart filter-icon"></i>
+                <span class="filter-text">Romantic</span>
+            </div>
+            <div class="filter-option filter-option-Pets-allowed">
+                <i class="fa-solid fa-dog filter-icon"></i>
+                <span class="filter-text">Pets allowed</span>
+            </div>
+         </div>
+
+         <!-- availability div -->
+        <div class="availability-container">
+            <i class="fa-solid fa-info availability-icon"></i>
+            <span class="availability-text">More than 500 accommodations are available in this <br>city</span>
+        </div>
+
+    </div>
+
+    <!-- The 'text-container' div -->
+    <div class="text-container">
+        <div class="text-item" id="accommodation">
+            <a href="#accommodation-section">Accommodations</a>
+        </div>
+        <div class="text-item" id="activities">
+            <a href="#activities-section">Activities</a>
+        </div>
+    </div>
+</section>
+
+<!-- accommodation section for desktop -->
+<section id="accommodation-section" class="hide-phone">
+    <h2 class="grid-title">Accommodations in Marseille</h2> <!-- The headline for the grid -->
+    <div class="grid-container">
+       
+    <!-- Card 1 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Accommodation 1">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-1-title">Auberge la Cannebière</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">25€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">    
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 2 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Accommodation 2">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-2-title">Hôtel du port</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">52€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 3 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Accommodation 3">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-3-title">les mouettes Hotel</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">76€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 4 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Accommodation 4">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-4-title">Hôtel de la mer</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">46€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 5 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Accommodation 5">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-5-title">Auberge Le Panier</h3>
+                 <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">23€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 6 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Accommodation 6">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-6-title">Hôtel chez Amina</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">96€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+        <h2 class="grid-ending">Show more</h2> <!-- The headline for the grid -->
+        
+    </div>
+</section>
+
+<!-- Most Popular Section for desktop and mobile -->
+<section class="Most-Popular-Section">
+    <h2 class="grid-title-most-popular">Most Popular</h2> <!-- The headline for the grid -->
+    <h2 class="grid-star"><i class="fa-solid fa-star" style="color: #000000;"></i></h2> <!-- The Star for the grid -->
+
+
+    <!-- Card 1 within the grid -->
+    <a href="#" class="card-link">
+      <div class="flexbox-card animation-card">
+        <!-- The image for the card -->
+        <div class="card-image-1">
+          <img src="images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Popular Item 1">
+        </div>
+        <div class="card-content-most-popular">
+          <!-- The name of the accommodation -->
+          <h3 class="card-7-title">Morning Sun Hotel</h3>
+          <!-- The price of the accommodation -->
+          <p class="card-price-most-popular-1">Night starting at <span class="bolded">128€</span></p>
+          <!-- The stars for the accommodation -->
+          <p class="card-stars-1">
+            <!-- Each star is a separate span for more precise control -->
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 2 within the grid -->
+    <a href="#" class="card-link">
+      <div class="flexbox-card animation-card">
+        <!-- The image for the card -->
+        <div class="card-image-2">
+          <img src="images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Popular Item 2">
+        </div>
+        <div class="card-content-most-popular-2">
+          <!-- The name of the accommodation (For Desktop) -->
+          <h3 class="card-title card-8-title hide-phone">Au cœur de l`eau Bed <br> and Breakfast </h3>
+
+            <!-- The name of the accommodation (For Phone) -->
+            <h3 class="card-title card-8-title hide-desktop">Au cœur de l`eau <br> Bed and Breakfast </h3>
+
+          <!-- The price of the accommodation -->
+          <p class="card-price-most-popular-2">Night starting at <span class="bolded">71€</span></p>
+          <!-- The stars for the accommodation -->
+          <p class="card-stars card-stars-2">
+            <!-- Each star is a separate span for more precise control -->
+            <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+            <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+            <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+            <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+            <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+          </p>
+        </div>
+      </div>
+    </a>
+
+    <!-- Card 3 within the grid -->
+    <a href="#" class="card-link">
+      <div class="flexbox-card animation-card">
+        <!-- The image for the card -->
+        <div class="card-image-3">
+          <img src="images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Popular Item 3">
+        </div>
+        <div class="card-content-most-popular">
+          <!-- The name of the accommodation -->
+          <h3 class="card-title card-9-title">Tout bleu et Blanc <br> Hotel</h3>
+          <!-- The price of the accommodation -->
+          <p class="card-price-most-popular-3">Night starting at <span class="bolded">68€</span></p>
+          <!-- The stars for the accommodation -->
+          <p class="card-stars card-stars-3">
+            <!-- Each star is a separate span for more precise control -->
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+              <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+          </p>
+        </div>
+      </div>
+    </a>
+</section>
+
+<!-- accommodation section for mobile -->
+<section id="accommodation-section" class="hide-desktop">
+    <div class="grid-container">
+        <h2 class="grid-title">Accommodations in Marseille</h2> <!-- The headline for the grid -->
+    <!-- Card 1 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Accommodation 1">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-1-title">Auberge la Cannebière</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">25€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">    
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 2 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Accommodation 2">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-2-title">Hôtel du port</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">52€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 3 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Accommodation 3">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-3-title">les mouettes Hotel</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">76€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 4 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Accommodation 4">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-4-title">Hôtel de la mer</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">46€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #c6cedd;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 5 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Accommodation 5">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-5-title">Auberge Le Panier</h3>
+                 <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">23€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+
+    <!-- Card 6 within the grid -->
+    <a href="#" class="card-link">
+        <div class="card">
+            <!-- The image for the card -->
+            <img class="card-image" src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Accommodation 6">
+            <div class="card-content">
+                <!-- The name of the accommodation -->
+                <h3 class="card-title card-6-title">Hôtel chez Amina</h3>
+                <!-- The price of the accommodation -->
+                <p class="card-price">Night starting at <span class="bolded">96€</span></p>
+                <!-- The stars for the accommodation -->
+                <p class="card-stars">
+                    <!-- Each star is a separate span for more precise control -->
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                    <span class="star"><i class="fa-solid fa-star" style="color: #005eff;"></i></span>
+                </p>
+            </div>
+        </div>
+    </a>
+        <h2 class="grid-ending">Show more</h2> <!-- The headline for the grid -->
+        
+    </div>
+</section>
+
+<!-- Activities in Marseille Section for desktop -->
+<section id="activities-section" class="hide-phone">
+    <h2 class="section-title">Activities in Marseille</h2>
+    <div class="activities-grid">
+        <!-- Four columns, each a flex container -->
+        <div class="activities-col">
+            <!-- First column with 1 card -->
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-1">
+                  <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity 1">
+                  <p class="activity-title-1">Old Port</p>
+              </div>
+            </a>
+        </div>
+        <div class="activities-col">
+            <!-- Second column with 2 cards -->
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-2">
+                  <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity 2">
+                  <p class="activity-title-2">Pomègues Fort</p>
+              </div>
+            </a>
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-3">
+                  <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activity 3">
+                  <p class="activity-title-3">Frioul Island</p>
+              </div>
+            </a>
+        </div>
+        
+        <!-- Third column with 1 card -->
+        <div class="activities-col">
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-4">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity 4">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-4">Calanques National Park</p>
+              </div>
+            </a>
+        </div>
+
+        <!-- Fourth column with 2 cards -->
+        <div class="activities-col">
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-5">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity 5">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-5">Notre-Dame-de-la-Garde</p>
+              </div>
+            </a>
+
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-6">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activity 6">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-6">Longchamp Park</p>
+              </div>
+            </a>
+        </div>
+        <!-- End of the Activities in Marseille Section -->
+    </div>
+</section>
+
+<!-- Activities in Marseille Section for phone -->
+<section id="activities-section" class="hide-desktop">
+    <h2 class="section-title">Activities in Marseille</h2>
+    <div class="activities-grid">
+        <!-- Four columns, each a flex container -->
+        <div class="activities-col">
+            <!-- First column with 1 card -->
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-1">
+                  <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Activity 1">
+                  <p class="activity-title-1">Old Port</p>
+              </div>
+            </a>
+        </div>
+        <div class="activities-col">
+            <!-- Second column with 2 cards -->
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-2">
+                  <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Activity 2">
+                  <p class="activity-title-2">Pomègues Fort</p>
+              </div>
+            </a>
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-3">
+                  <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Activity 3">
+                  <p class="activity-title-3">Frioul Island</p>
+              </div>
+            </a>
+        </div>
+        
+        <!-- Third column with 1 card -->
+        <div class="activities-col">
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-4">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Activity 4">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-4">Calanques National Park</p>
+              </div>
+            </a>
+        </div>
+
+        <!-- Fourth column with 2 cards -->
+        <div class="activities-col">
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-5">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Activity 5">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-5">Notre-Dame-de-la-Garde</p>
+              </div>
+            </a>
+
+            <a href="#" class="card-link">
+              <div class="activity-card animation-card activity-card-6">
+                  <!-- The image for the card -->
+                  <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Activity 6">
+                  <!-- The title of the activity -->
+                  <p class="activity-title-6">Longchamp Park</p>
+              </div>
+            </a>
+        </div>
+        <!-- End of the Activities in Marseille Section -->
+    </div>
+</section>
+
+<!-- Footer for mobile -->
+<footer style="background-color: #F2F2F2;" class="hide-desktop">
+    <div class="footer-container">
+      <div class="footer-col footer-col-About">
+        <!-- First column -->
+        <p class="bolded footer-header">About</p>
+        <p>Site Map</p>
+        <p>General Terms and Conditions</p>
+        <p>Data and Privacy</p>
+      </div>
+  
+      <div class="footer-col footer-col-Our-Accommodations">
+        <!-- Second column -->
+        <p class="bolded footer-header">Our Accommodations</p>
+        <p>Quality Assessment</p>
+        <p>You have a hotel?</p>
+      </div>
+  
+      <div class="footer-col footer-col-Our-Assistance">
+        <!-- Third column -->
+        <p class="bolded footer-header">Assistance</p>
+        <p>Help Desk</p>
+        <p>Contact Us</p>
+      </div>
+    </div>
+  </footer>
+
+<!-- Footer for desktop -->
+<footer style="background-color: #F2F2F2;" class="hide-phone">
+  <div class="footer-container">
+    <div class="footer-col">
+      <!-- First column -->
+      <p class="bolded footer-header">About</p>
+      <p>Site Map</p>
+      <p>General Terms and Conditions</p>
+      <p>Data and Privacy</p>
+    </div>
+
+    <div class="footer-col">
+      <!-- Second column -->
+      <p class="bolded footer-header">Our Accommodations</p>
+      <p>Quality Assessment</p>
+      <p>You have a hotel?</p>
+    </div>
+
+    <div class="footer-col">
+      <!-- Third column -->
+      <p class="bolded footer-header">Assistance</p>
+      <p>Help Desk</p>
+      <p>Contact Us</p>
+    </div>
+  </div>
+</footer>
+
+
+
+</body>
+</html>
+
+
+
