@@ -13,7 +13,9 @@
     /* Hides an element for view */
     .hide-phone {
     display: none;
-    } 
+    }  
+
+    
     
     .Most-Popular-Section {
       display: flex;
@@ -386,12 +388,7 @@
     body {
         font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
         }
-    
-        /* Hides an element for view */
-        .hide-desktop {
-            display: none;
-        } 
-    
+
     .Most-Popular-Section {
       display: flex;
       flex-direction: column; /* Makes the flexbox grid vertical */
@@ -402,7 +399,7 @@
       width: 30%; /* Adjust as needed to fit with other containers on the page */
       margin: 15px 15px 20px 12px;  /* Top, right, bottom, and left margins respectively */
       border-radius: 20px; /* Give the card rounded corners */
-      width: 500px; /* Set the width to 100% of the parent container */
+      width: 493px; /* Set the width to 100% of the parent container */
       height: 720px; /* Set the height to auto, it will expand as much as the content needs */
     }
     

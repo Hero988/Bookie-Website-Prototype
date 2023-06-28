@@ -552,13 +552,12 @@ display: none;
         justify-content: space-between; /* This aligns the logo to the far left and the text-container to the far right. */
         align-items: center; /* This will vertically center the items in the container */
     }
-    
+ 
     /* Style for the logo and the tagline container */
     .logo-tagline-wrapper {
         display: flex;
         flex-direction: column; /* Stack logo and tagline-container vertically */
         justify-content: flex-start; /* Place items from the top */
-        align-items: flex-start; /* Align items to the left */
         margin-left: 20px
     }
     
@@ -579,9 +578,9 @@ display: none;
         position: static ; /*  This is the default position value. The element is positioned according to the normal flow of the document.*/
         display: flex;
         gap: 20px; /* This creates a space between the two text items. Adjust as needed. */
-        margin-top: -296px;
-        margin-left: -217px;
-        margin-right: 347px;
+        margin-top: -324px;
+        margin-left: -280px;
+        margin-right: 274px;
     }
     
     /* The 'text-item' class is used to style the individual text items. */
@@ -708,17 +707,12 @@ display: none;
         cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
     }
     
-    /* Hides an element for view */
-    .hide-desktop {
-    display: none;
-    } 
-    
     /* Styles for the filter container and its children */
     .filter-container {
         display: flex;
         align-items: center;
         padding: 10px;
-        margin-top: 10px; /* Creates some space above the filter container */
+        margin-top: -48px; /* Creates some space above the filter container */
     }
     
     /* Styles for the filter title i.e. "Low Cost" */
@@ -760,6 +754,11 @@ display: none;
     .filter-text {
         font-weight: bold;
         padding-left: 30px; /* Increase this value if you want to move the text further to the right */
+    }
+
+    .filter-option-Pets-allowed {
+        margin-left: -524px;
+        margin-top: 106px;
     }
     
     .availability-container {
