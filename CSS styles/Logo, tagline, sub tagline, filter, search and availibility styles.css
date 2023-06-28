@@ -541,7 +541,251 @@ display: none;
 
 /* Styles for tablets (Apple Air)*/
 @media (min-width: 768px) and (max-width: 991px) {
-
+	body {
+        font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
+    }
+    
+    /* Style for the logo, tagline, sub tagline, filter, search and availibility divs container */
+    .logo-tagline-subtagline-filter-search-availibility-container {
+        width: 100%;
+        display: flex;
+        justify-content: space-between; /* This aligns the logo to the far left and the text-container to the far right. */
+        align-items: center; /* This will vertically center the items in the container */
+    }
+    
+    /* Style for the logo and the tagline container */
+    .logo-tagline-wrapper {
+        display: flex;
+        flex-direction: column; /* Stack logo and tagline-container vertically */
+        justify-content: flex-start; /* Place items from the top */
+        align-items: flex-start; /* Align items to the left */
+        margin-left: 20px
+    }
+    
+    /* Style for the tagline container */
+    .tagline-container {
+        margin-top:-10px
+    }
+    
+    /* Style for the logo image */
+    .logo img{
+        width: 100px; /* Width of the logo image */
+        height: auto; /* Keeps aspect ratio */
+        margin: 10px 10px 30px 0px; /* Four values, like margin: 10px 20px 30px 40px, applies the values to the top, right, bottom, and left sides respectively. */ 
+    }
+    
+    /* The 'text-container' class is used to hold and style our text-items. */
+    .text-container {
+        position: static ; /*  This is the default position value. The element is positioned according to the normal flow of the document.*/
+        display: flex;
+        gap: 20px; /* This creates a space between the two text items. Adjust as needed. */
+        margin-top: -296px;
+        margin-left: -217px;
+        margin-right: 347px;
+    }
+    
+    /* The 'text-item' class is used to style the individual text items. */
+    .text-item {
+        position: relative; /* Needed to position the line correctly */
+    }
+    
+    /* Styles for the 'accommodation' text item */
+    #accommodation {
+        font-weight: 600; /* Makes the text bold */
+        color: #0065FC; /* Blue color */
+    
+    }
+    
+    /* Styles for the 'activities' text item */
+    #activities {
+        font-family: 'Raleway', sans-serif; /* This sets Raleway as the font for activities */
+    }
+    
+    /* Styles for the 'accommodation' link */
+    #accommodation a {
+        color: inherit; /* Ensures the link inherits the color of the parent element */
+        text-decoration: none; /* Removes the underline from the link */
+    }
+    
+    /* Styles for the 'accommodation' link when clicked */
+    #accommodation a:visited {
+        color: inherit; /* Ensures the visited link retains the color of the parent element */
+    }
+    
+    /* Styles for the 'accommodation' blue line */
+    #accommodation::before { /* This creates the blue line above the 'accommodation' text */
+        content: "";
+        position: absolute;
+        top: -20px; /* Adjust as needed to position the line above the text */
+        left: -20px;
+        right: -20px;
+        height: 2px; /* Adjust as needed to change the thickness of the line */
+        background-color: #0065FC; /* Blue color */
+    }
+    
+    /* I used the ::before pseudo-element to create the blue line above the "Accommodation" text */
+    
+    /* Styles for the 'activities' link */
+    #activities a {
+        color: inherit; /* Ensures the link inherits the color of the parent element */
+        text-decoration: none; /* Removes the underline from the link */
+    }
+    
+    /* Styles for the 'activities' link when clicked */
+    #activities a:visited {
+        color: inherit; /* Ensures the visited link retains the color of the parent element */
+    }
+    
+    /* Styles for the 'tagline' div */
+    .tagline {
+        font-family: 'Raleway', sans-serif; /* Using Raleway font */
+        font-weight: 600; /* Makes the text bold */
+        font-size: 23px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+        text-align: left; /* aligns the text to the left */
+        padding-top: 20px; /* Space above the text. Adjust as needed */
+    }
+    
+    /* Styles for the 'subtagline' div */
+    .subtagline {
+        font-family: 'Raleway', sans-serif; /* Using Raleway font */
+        font-size: 15px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+        text-align: left; /* aligns the text to the left */
+        padding-top: 10px;
+        padding-bottom: 30px; /* Space below the text. Adjust as needed */
+    }
+    
+    .break-highlight {
+        display: inline; /* By default (This CSS tells the browser to display the <span> element with class break-highlight as inline by default (which means it appears on the same line as the surrounding text).)  */
+    }
+    
+    /* This styles the 'search-container' div */
+    .search-container {
+        display: flex; /* This will place the input and button side by side */
+        justify-content: flex-start; /* This aligns the items to the left of the container */
+        margin-top: -20px; /* Add space above the search container. Adjust as needed. */
+    }
+    
+    /* This styles the 'search-field' div */
+    .search-field {
+        display: flex; /* This will place the input and button side by side */
+        border: 2px solid #F2F2F2; /* Sets the border color to white */
+        border-radius: 30px; /* Gives the div rounded corners */
+        overflow: hidden; /* Keeps the inner elements within the border */
+    }
+    
+    /* This styles the search icon */
+    .search-icon {
+        padding: 14px; /* Adds some padding around the icon */
+        color: #000000; /* Sets the color of the icon to black */
+        background: #F2F2F2; /* Sets the background color of the button to blue */
+    }
+    
+    /* This styles the search input field */
+    #search-input {
+        flex-grow: 1; /* This will make the input field take up the remaining space */
+        margin-right: 10px; /* Add some space to the right of the input field */
+        padding: 10px; /* Add some padding inside the input field */
+        font-weight: bold; /* Makes the placeholder text bold */
+        border: none; /* Removes the input field border */
+        outline: none; /* Remove the focus outline */
+    }
+    
+    /* Changes the text of Marseille,France to black */
+    #search-input::placeholder {
+        color: black; /* Changes the color of the placeholder text to black */
+    }
+    
+    /* This styles the search button */
+    #search-button {
+        padding: 10px 20px; /* Add some padding inside the button */
+        background: #0065FC; /* Sets the background color of the button to blue */
+        color: white; /* Sets the color of the button text to white */
+        border: none; /* Removes the default button border */
+        font-weight: 600; /* Makes the text bold */
+        font-size: 15px; /* Adjust as needed to change the size of the text */
+        cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+    }
+    
+    /* Hides an element for view */
+    .hide-desktop {
+    display: none;
+    } 
+    
+    /* Styles for the filter container and its children */
+    .filter-container {
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        margin-top: 10px; /* Creates some space above the filter container */
+    }
+    
+    /* Styles for the filter title i.e. "Low Cost" */
+    .filter-title {
+        font-weight: bold;
+        margin-right: 20px;
+    }
+    
+    .filter-option {
+        position: relative; /* Set position to relative to create a context for absolute positioning */
+        display: flex;
+        align-items: center;
+        padding: 10px; /* Add padding inside each filter option */
+        margin-right: 20px; /* Add space to the right of each filter option */
+        border: 1px solid #dddddd; /* Add border around each filter option */
+        border-radius: 20px; /* Give each filter option rounded corners */
+    }
+    
+    .filter-option:hover {
+        /* Add your desired hover styles here */
+        transform: scale(1.1); /* This will make the element slightly larger when hovered over */
+        background-color: #f5f5f5; /* This changes the background color on hover */
+        cursor: pointer; /* Changes the cursor to a hand when hovering over the button */
+    }
+    
+    .filter-icon {
+        color: #0065FC; /* Set the color of the icon to dark blue */
+        border: 2px solid #DEEBFF; /* Set a light blue border */
+        border-radius: 50%; /* This will make the border circular */
+        margin-right: 20px; /* Space between the icon and the text */
+        padding: 12px; /* Increase the padding to enlarge the circle */
+        background-color: #DEEBFF; /* Set a light blue background color */
+        position: absolute; /* Set position to absolute to allow the icon to go outside the boundaries of the parent */
+        left: -10px; /* Adjust as necessary to position the icon where you want it */
+        border: none; /* Removes border */
+    
+    }
+    
+    .filter-text {
+        font-weight: bold;
+        padding-left: 30px; /* Increase this value if you want to move the text further to the right */
+    }
+    
+    .availability-container {
+        display: flex;
+        align-items: center;
+        margin-top: 10px; /* Add some space at the top */
+    }
+    
+    .availability-icon {
+        color: #0065FC;
+        font-size: 11px;
+        border: 2px solid #EBEBEB;
+        border-radius: 50%;
+        padding: 0px; /* Adjust the padding to decrease the size of the circle */
+        margin-right: 10px;
+        background-color: white;
+        display: flex; /* Add display: flex to center the icon */
+        justify-content: center; /* Center the icon horizontally */
+        align-items: center; /* Center the icon vertically */
+        width: 20px; /* Set the width and height to create a circular shape */
+        height: 20px;
+    }
+    
+    .availability-text {
+        font-size: 11px;
+    }
 }
 
 

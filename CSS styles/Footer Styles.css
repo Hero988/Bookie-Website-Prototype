@@ -32,8 +32,34 @@
 
 /* Styles for tablets (viewports less than 768px):*/
 
-@media (min-width: 767px) {
-  /* CSS rules for screens less than 768px go here */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {
+    font-family: 'Raleway', sans-serif; 
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 500px;
+    height: 433px;
+    border-radius: 20px;
+  }
+  
+  .footer-col {
+    width: 100%;
+    margin: 10px 0;
+    margin-right: -71px;
+  }
+  
+  .footer-col-About,
+  .footer-col-Our-Accommodations,
+  .footer-col-Our-Assistance {
+    margin: 20px -20px 0 0;
+  }
 }
 
 /* Styles for mobile phones */
@@ -50,7 +76,7 @@
     background-color: #f2f2f2;
     padding: 20px;
     width: 500px;
-    height: 700px;
+    height: 443px;
     border-radius: 20px;
   }
   

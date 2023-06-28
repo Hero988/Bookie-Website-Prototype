@@ -340,5 +340,176 @@
 
 /* Styles for tablets*/
 @media (min-width: 768px) and (max-width: 991px) {
-
+    body {
+        font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
+    }
+    
+    /* The styles for the grid container and its children */
+    #accommodation-section {
+        background-color: #F2F2F2; /* Set the background color of the grid to #F2F2F2 */
+        width: 531px; /* Set the width to 100% of the parent container */
+        height: 1695px; /* Set the height to auto, it will expand as much as the content needs */
+        padding: 4px 0; /* Add padding at the top and bottom to create some space between the content and the edge of the section */
+        border-radius: 20px; /* Give the card rounded corners */
+        margin-left: 12px;
+        margin-top: 20px;
+    }
+    
+    /* Makes the text bold */
+    .bolded { 
+        font-weight: bold; 
+    }
+    
+    /* Defining the grid container */
+    .grid-container {
+        display: grid;
+        /* The grid will create 3 cards per row */
+        grid-template-columns: repeat(1, minmax(300px, 1fr)); 
+        /* 30px vertical gap, 20px horizontal gap */
+        gap: 30px 20px; 
+        /* Add padding to the container */
+        padding: 20px; 
+        /* Adjust the width to fit the contents */
+        width: auto; 
+        /* Center the grid container contents */
+        justify-content: center;
+    }
+    
+    .grid-title {
+        font-size: 24px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+        text-align: left; /* Puts the text to the left */
+        font-weight: 600; /* Makes the text bold */
+        margin-left: 20px;
+        margin-top: 50px;
+    }
+    
+    .grid-ending {
+        font-size: 18px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+        text-align: left; /* Puts the text to the left */
+        font-weight: 600; /* Makes the text bold */
+        margin-left: 20px;
+        margin-top:  30px;
+    }
+    
+    /* Defining properties for the card */
+    .card {
+        display: flex;
+        flex-direction: column; /* Stack the card contents vertically */
+        align-items: center; /* Center the card contents */
+        border: 1px solid #ddd; /* Add a border around the card */
+        border-radius: 20px; /* Give the card rounded corners */
+        background-color: white; /* Set the background color of the card to white */
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+        width: 350px; /* Set the width of the card */
+        height: 220px; /* Set the height of the card */
+    }
+    
+    /* Defining properties for the card image */
+    .card-image {
+        width: calc(100% - 10px); /* Subtracting the padding from the width */
+        height: 60%; /* Allocating 60% of card height to the image */
+        border-radius: 15px 15px 0 0; /* This will make the top edges rounded and the bottom edge straight */
+        padding: 2px; /* Adding padding between the image and the card background */
+        object-fit: cover; /* This will ensure that the aspect ratio of the image is preserved */
+        object-position: center; /* This will center the image */
+    }
+    
+    /* Defining properties for the card content */
+    .card-content {
+        padding: 10px; /* Adding some padding to the content */
+        text-align: center; /* Center content horizontally */
+        display: flex; /* Using flexbox to layout the content */
+        flex-direction: column; /* Stack the content vertically */
+        align-items: center; /* Center content horizontally */
+    }
+    
+    .card-title {
+        font-size: 18px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+    }
+    
+    /* The margin for each idividual card title, this is the first one */
+    .card-1-title {
+        margin-left: -120px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-2-title {
+        margin-left: -200px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-3-title {
+        margin-left: -155px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-4-title {
+        margin-left: -185px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-5-title {
+        margin-left: -155px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-6-title {
+        margin-left: -170px; /* Moves content up or down */
+        margin-top: -10px; /* Moves content left or right */
+    }
+    
+    .card-price {
+        margin-top: -9px;
+        margin-left: -160px;
+        font-size: 16px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+    }
+    
+    .card-stars {
+        margin-top: -10px;
+        margin-left: -240px;
+        font-size: 12px; /* Adjust as needed to change the size of the text */
+    }
+    
+    .star {
+        margin-right: -2px; /* Add space to the right of each star */
+    }
+    
+    .card-link {
+        text-decoration: none; /* Remove underline from link */
+        color: inherit; /* Inherit color from parent so it doesn't look like a typical link */
+    }
+    
+    .card {
+        /* Add transition for smooth enlargement */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .card-link:hover .card {
+        /* Enlarge card on hover */
+        transform: scale(1.05);
+    }
+    
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    .card:active {
+        /* Apply shake animation on click */
+        animation: shake 0.5s;
+        animation-iteration-count: 1;
+    }
 }
