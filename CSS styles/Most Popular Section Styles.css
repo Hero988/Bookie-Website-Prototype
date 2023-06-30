@@ -1,4 +1,362 @@
 ﻿
+body {
+    font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
+    }
+
+    /* Hides an element for view */
+    .hide-desktop {
+        display: none;
+    } 
+
+.Most-Popular-Section {
+  display: flex;
+  flex-direction: column; /* Makes the flexbox grid vertical */
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2; /* Your desired background color */
+  padding: 20px;
+  width: 30%; /* Adjust as needed to fit with other containers on the page */
+  margin: 17px 15px 20px 1311px;  /* Top, right, bottom, and left margins respectively */
+  border-radius: 20px; /* Give the card rounded corners */
+  width: 500px; /* Set the width to 100% of the parent container */
+  height: 720px; /* Set the height to auto, it will expand as much as the content needs */
+}
+
+/* Makes the card display as a flex container and align its items (the image and the text) side by side */
+.flexbox-card {
+  background-color: #fff; /* Your desired card color */
+  padding: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center; /* Aligns the image and the text vertically in the middle of the card */
+  border-radius: 20px; /* Give the card rounded corners */
+  width: 430px; /* Set the width of the card */
+  height: 170px; /* Set the height of the card */
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); /* Apply shadow effect */
+}
+
+/* Styles for the div containing the text */
+.card-content-most-popular {
+  /* Adjust as needed */
+  padding-left: 20px; /* Adds some space between the image and the text */
+}
+
+.flexbox-card img {
+    width: 150px; 
+    height: 145px; 
+    border-radius: 15px 0 0 15px; /* This will make the top-left, bottom-left, and top-right edges rounded and the right edge straight */
+    padding: 0px; /* Adding padding between the image and the card background */
+    object-fit: cover; /* This will ensure that the aspect ratio of the image is preserved */
+    object-position: center; /* This will center the image */
+    margin-right: 170px;
+    margin-top: -20px;
+}
+
+.grid-title-most-popular {
+    position: absolute; /* Only changes the title*/
+    font-size: 24px; /* Adjust as needed to change the size of the text */
+    color: #000; /* Change to the desired color */
+    text-align: left; /* Puts the text to the left */
+    font-weight: 600; /* Makes the text bold */
+    margin-bottom: 650px;
+    margin-left: -250px;
+}
+
+.card-content-most-popular {
+    margin-top: -9px;
+    margin-left: -70px;
+    font-size: 16px; /* Adjust as needed to change the size of the text */
+    color: #000; /* Change to the desired color */
+}
+
+.grid-star {
+    font-size: 24px; /* Adjust as needed to change the size of the text */
+    text-align: left; /* Puts the text to the left */
+    font-weight: 600; /* Makes the text bold */
+    margin-left: 400px;
+    margin-top: 10px
+}
+
+/* Adjustments for the first card in Most Popular */
+
+.card-7-title {
+    margin-left: -110px; /* Moves content up or down */
+    margin-top: 20px; /* Moves content left or right */
+}
+
+.card-price-most-popular-1 {
+    margin-left: -100px;
+    margin-top: 40px;
+}
+
+.card-image-1 {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.card-stars-1 {
+    margin-top: 40px;
+    margin-left:-180px;
+    font-size: 12px;
+}
+
+/* Adjustments for the second card in Most Popular */
+
+.card-8-title {
+    margin-left: -150px; /* Moves content up or down */
+    margin-top: 10px; /* Moves content left or right */
+    text-align: left; /* Puts the text to the left */
+}
+
+.card-price-most-popular-2 {
+    margin-left: -180px;
+    margin-top: 5px;
+}
+
+.card-image-2 {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.card-stars-2 {
+    margin-top: 40px;
+    margin-left:-260px;
+}
+
+/* Adjustments for the third card in Most Popular */
+
+.card-9-title {
+    margin-left: -100px; /* Moves content left or right */
+    margin-top: 20px;  /* Moves content up or down */
+    text-align: left; /* Puts the text to the left */
+}
+
+.card-image-3 {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+.card-price-most-popular-3 {
+    margin-left: -100px;
+    margin-top: 5px;
+}
+
+.card-stars-3 {
+    margin-top: 40px;
+    margin-left:-190px;
+}
+
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+/* This section is all for the most popular card englarging and clicking */
+
+.animation-card {
+    /* Add transition for smooth enlargement */
+    transition: transform 0.3s ease-in-out;
+}
+
+.animation-card:active {
+    /* Apply shake animation on click */
+    animation: shake 0.5s;
+    animation-iteration-count: 1;
+}
+
+.card-link:hover .animation-card {
+    /* Enlarge card on hover */
+    transform: scale(1.05);
+}
+
+
+/* Styles for tablets (Apple Air)*/
+@media (max-width: 991px) {
+    body {
+        font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
+        }
+
+    .Most-Popular-Section {
+      display: flex;
+      flex-direction: column; /* Makes the flexbox grid vertical */
+      justify-content: space-around;
+      align-items: center;
+      background-color: #f2f2f2; /* Your desired background color */
+      padding: 20px;
+      width: 30%; /* Adjust as needed to fit with other containers on the page */
+      margin: 15px 15px 20px 12px;  /* Top, right, bottom, and left margins respectively */
+      border-radius: 20px; /* Give the card rounded corners */
+      width: 493px; /* Set the width to 100% of the parent container */
+      height: 720px; /* Set the height to auto, it will expand as much as the content needs */
+    }
+    
+    /* Makes the card display as a flex container and align its items (the image and the text) side by side */
+    .flexbox-card {
+      background-color: #fff; /* Your desired card color */
+      padding: 0px;
+      margin-bottom: 20px;
+      text-align: center;
+      display: flex;
+      align-items: center; /* Aligns the image and the text vertically in the middle of the card */
+      border-radius: 20px; /* Give the card rounded corners */
+      width: 430px; /* Set the width of the card */
+      height: 170px; /* Set the height of the card */
+    }
+    
+    /* Styles for the div containing the text */
+    .card-content-most-popular {
+      /* Adjust as needed */
+      padding-left: 20px; /* Adds some space between the image and the text */
+    }
+    
+    .flexbox-card img {
+        width: 150px; 
+        height: 145px; 
+        border-radius: 15px 0 0 15px; /* This will make the top-left, bottom-left, and top-right edges rounded and the right edge straight */
+        padding: 0px; /* Adding padding between the image and the card background */
+        object-fit: cover; /* This will ensure that the aspect ratio of the image is preserved */
+        object-position: center; /* This will center the image */
+        margin-right: 170px;
+        margin-top: -20px;
+    }
+    
+    .grid-title-most-popular {
+        position: absolute; /* Only changes the title*/
+        font-size: 24px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+        text-align: left; /* Puts the text to the left */
+        font-weight: 600; /* Makes the text bold */
+        margin-bottom: 650px;
+        margin-left: -250px;
+    }
+    
+    .card-content-most-popular {
+        margin-top: -9px;
+        margin-left: -70px;
+        font-size: 16px; /* Adjust as needed to change the size of the text */
+        color: #000; /* Change to the desired color */
+    }
+    
+    .grid-star {
+        font-size: 24px; /* Adjust as needed to change the size of the text */
+        text-align: left; /* Puts the text to the left */
+        font-weight: 600; /* Makes the text bold */
+        margin-left: 400px;
+        margin-top: 10px
+    }
+    
+    /* Adjustments for the first card in Most Popular */
+    
+    .card-7-title {
+        margin-left: -110px; /* Moves content up or down */
+        margin-top: 20px; /* Moves content left or right */
+    }
+    
+    .card-price-most-popular-1 {
+        margin-left: -100px;
+        margin-top: 40px;
+    }
+    
+    .card-image-1 {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .card-stars-1 {
+        margin-top: 40px;
+        margin-left:-180px;
+        font-size: 12px;
+    }
+    
+    /* Adjustments for the second card in Most Popular */
+    
+    .card-8-title {
+        margin-left: -150px; /* Moves content up or down */
+        margin-top: 10px; /* Moves content left or right */
+        text-align: left; /* Puts the text to the left */
+    }
+    
+    .card-price-most-popular-2 {
+        margin-left: -180px;
+        margin-top: 5px;
+    }
+    
+    .card-image-2 {
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+    
+    .card-stars-2 {
+        margin-top: 40px;
+        margin-left:-260px;
+    }
+    
+    /* Adjustments for the third card in Most Popular */
+    
+    .card-9-title {
+        margin-left: -100px; /* Moves content left or right */
+        margin-top: 20px;  /* Moves content up or down */
+        text-align: left; /* Puts the text to the left */
+    }
+    
+    .card-image-3 {
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+    
+    .card-price-most-popular-3 {
+        margin-left: -100px;
+        margin-top: 5px;
+    }
+    
+    .card-stars-3 {
+        margin-top: 40px;
+        margin-left:-190px;
+    }
+    
+    @keyframes shake {
+        0% { transform: translate(1px, 1px) rotate(0deg); }
+        10% { transform: translate(-1px, -2px) rotate(-1deg); }
+        20% { transform: translate(-3px, 0px) rotate(1deg); }
+        30% { transform: translate(3px, 2px) rotate(0deg); }
+        40% { transform: translate(1px, -1px) rotate(1deg); }
+        50% { transform: translate(-1px, 2px) rotate(-1deg); }
+        60% { transform: translate(-3px, 1px) rotate(0deg); }
+        70% { transform: translate(3px, 1px) rotate(-1deg); }
+        80% { transform: translate(-1px, -1px) rotate(1deg); }
+        90% { transform: translate(1px, 2px) rotate(0deg); }
+        100% { transform: translate(1px, -2px) rotate(-1deg); }
+    }
+    
+    /* This section is all for the most popular card englarging and clicking */
+    
+    .animation-card {
+        /* Add transition for smooth enlargement */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .animation-card:active {
+        /* Apply shake animation on click */
+        animation: shake 0.5s;
+        animation-iteration-count: 1;
+    }
+    
+    .card-link:hover .animation-card {
+        /* Enlarge card on hover */
+        transform: scale(1.05);
+    }
+}
+
 /* Styles for mobile phones */
 @media (max-width: 768px) {
     body {
@@ -196,368 +554,6 @@
         /* Enlarge card on hover */
         transform: scale(1.05);
     }   
-}
-
-
-/* Styles for desktop*/
-@media (min-width: 992px) { 
-	body {
-    font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
-    }
-
-    /* Hides an element for view */
-    .hide-desktop {
-        display: none;
-    } 
-
-.Most-Popular-Section {
-  display: flex;
-  flex-direction: column; /* Makes the flexbox grid vertical */
-  justify-content: space-around;
-  align-items: center;
-  background-color: #f2f2f2; /* Your desired background color */
-  padding: 20px;
-  width: 30%; /* Adjust as needed to fit with other containers on the page */
-  margin: 17px 15px 20px 1311px;  /* Top, right, bottom, and left margins respectively */
-  border-radius: 20px; /* Give the card rounded corners */
-  width: 500px; /* Set the width to 100% of the parent container */
-  height: 720px; /* Set the height to auto, it will expand as much as the content needs */
-}
-
-/* Makes the card display as a flex container and align its items (the image and the text) side by side */
-.flexbox-card {
-  background-color: #fff; /* Your desired card color */
-  padding: 0px;
-  margin-bottom: 20px;
-  text-align: center;
-  display: flex;
-  align-items: center; /* Aligns the image and the text vertically in the middle of the card */
-  border-radius: 20px; /* Give the card rounded corners */
-  width: 430px; /* Set the width of the card */
-  height: 170px; /* Set the height of the card */
-}
-
-/* Styles for the div containing the text */
-.card-content-most-popular {
-  /* Adjust as needed */
-  padding-left: 20px; /* Adds some space between the image and the text */
-}
-
-.flexbox-card img {
-    width: 150px; 
-    height: 145px; 
-    border-radius: 15px 0 0 15px; /* This will make the top-left, bottom-left, and top-right edges rounded and the right edge straight */
-    padding: 0px; /* Adding padding between the image and the card background */
-    object-fit: cover; /* This will ensure that the aspect ratio of the image is preserved */
-    object-position: center; /* This will center the image */
-    margin-right: 170px;
-    margin-top: -20px;
-}
-
-.grid-title-most-popular {
-    position: absolute; /* Only changes the title*/
-    font-size: 24px; /* Adjust as needed to change the size of the text */
-    color: #000; /* Change to the desired color */
-    text-align: left; /* Puts the text to the left */
-    font-weight: 600; /* Makes the text bold */
-    margin-bottom: 650px;
-    margin-left: -250px;
-}
-
-.card-content-most-popular {
-    margin-top: -9px;
-    margin-left: -70px;
-    font-size: 16px; /* Adjust as needed to change the size of the text */
-    color: #000; /* Change to the desired color */
-}
-
-.grid-star {
-    font-size: 24px; /* Adjust as needed to change the size of the text */
-    text-align: left; /* Puts the text to the left */
-    font-weight: 600; /* Makes the text bold */
-    margin-left: 400px;
-    margin-top: 10px
-}
-
-/* Adjustments for the first card in Most Popular */
-
-.card-7-title {
-    margin-left: -110px; /* Moves content up or down */
-    margin-top: 20px; /* Moves content left or right */
-}
-
-.card-price-most-popular-1 {
-    margin-left: -100px;
-    margin-top: 40px;
-}
-
-.card-image-1 {
-    margin-left: 10px;
-    margin-top: 20px;
-}
-
-.card-stars-1 {
-    margin-top: 40px;
-    margin-left:-180px;
-    font-size: 12px;
-}
-
-/* Adjustments for the second card in Most Popular */
-
-.card-8-title {
-    margin-left: -150px; /* Moves content up or down */
-    margin-top: 10px; /* Moves content left or right */
-    text-align: left; /* Puts the text to the left */
-}
-
-.card-price-most-popular-2 {
-    margin-left: -180px;
-    margin-top: 5px;
-}
-
-.card-image-2 {
-    margin-left: 10px;
-    margin-top: 20px;
-}
-
-.card-stars-2 {
-    margin-top: 40px;
-    margin-left:-260px;
-}
-
-/* Adjustments for the third card in Most Popular */
-
-.card-9-title {
-    margin-left: -100px; /* Moves content left or right */
-    margin-top: 20px;  /* Moves content up or down */
-    text-align: left; /* Puts the text to the left */
-}
-
-.card-image-3 {
-    margin-left: 10px;
-    margin-top: 30px;
-}
-
-.card-price-most-popular-3 {
-    margin-left: -100px;
-    margin-top: 5px;
-}
-
-.card-stars-3 {
-    margin-top: 40px;
-    margin-left:-190px;
-}
-
-@keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-}
-
-/* This section is all for the most popular card englarging and clicking */
-
-.animation-card {
-    /* Add transition for smooth enlargement */
-    transition: transform 0.3s ease-in-out;
-}
-
-.animation-card:active {
-    /* Apply shake animation on click */
-    animation: shake 0.5s;
-    animation-iteration-count: 1;
-}
-
-.card-link:hover .animation-card {
-    /* Enlarge card on hover */
-    transform: scale(1.05);
-}
-
-}
-
-
-/* Styles for tablets (viewports wider than 768px but less than or equal to 992px):*/
-@media (min-width: 768px) and (max-width: 991px) {
-    body {
-        font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
-        }
-
-    .Most-Popular-Section {
-      display: flex;
-      flex-direction: column; /* Makes the flexbox grid vertical */
-      justify-content: space-around;
-      align-items: center;
-      background-color: #f2f2f2; /* Your desired background color */
-      padding: 20px;
-      width: 30%; /* Adjust as needed to fit with other containers on the page */
-      margin: 15px 15px 20px 12px;  /* Top, right, bottom, and left margins respectively */
-      border-radius: 20px; /* Give the card rounded corners */
-      width: 493px; /* Set the width to 100% of the parent container */
-      height: 720px; /* Set the height to auto, it will expand as much as the content needs */
-    }
-    
-    /* Makes the card display as a flex container and align its items (the image and the text) side by side */
-    .flexbox-card {
-      background-color: #fff; /* Your desired card color */
-      padding: 0px;
-      margin-bottom: 20px;
-      text-align: center;
-      display: flex;
-      align-items: center; /* Aligns the image and the text vertically in the middle of the card */
-      border-radius: 20px; /* Give the card rounded corners */
-      width: 430px; /* Set the width of the card */
-      height: 170px; /* Set the height of the card */
-    }
-    
-    /* Styles for the div containing the text */
-    .card-content-most-popular {
-      /* Adjust as needed */
-      padding-left: 20px; /* Adds some space between the image and the text */
-    }
-    
-    .flexbox-card img {
-        width: 150px; 
-        height: 145px; 
-        border-radius: 15px 0 0 15px; /* This will make the top-left, bottom-left, and top-right edges rounded and the right edge straight */
-        padding: 0px; /* Adding padding between the image and the card background */
-        object-fit: cover; /* This will ensure that the aspect ratio of the image is preserved */
-        object-position: center; /* This will center the image */
-        margin-right: 170px;
-        margin-top: -20px;
-    }
-    
-    .grid-title-most-popular {
-        position: absolute; /* Only changes the title*/
-        font-size: 24px; /* Adjust as needed to change the size of the text */
-        color: #000; /* Change to the desired color */
-        text-align: left; /* Puts the text to the left */
-        font-weight: 600; /* Makes the text bold */
-        margin-bottom: 650px;
-        margin-left: -250px;
-    }
-    
-    .card-content-most-popular {
-        margin-top: -9px;
-        margin-left: -70px;
-        font-size: 16px; /* Adjust as needed to change the size of the text */
-        color: #000; /* Change to the desired color */
-    }
-    
-    .grid-star {
-        font-size: 24px; /* Adjust as needed to change the size of the text */
-        text-align: left; /* Puts the text to the left */
-        font-weight: 600; /* Makes the text bold */
-        margin-left: 400px;
-        margin-top: 10px
-    }
-    
-    /* Adjustments for the first card in Most Popular */
-    
-    .card-7-title {
-        margin-left: -110px; /* Moves content up or down */
-        margin-top: 20px; /* Moves content left or right */
-    }
-    
-    .card-price-most-popular-1 {
-        margin-left: -100px;
-        margin-top: 40px;
-    }
-    
-    .card-image-1 {
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    
-    .card-stars-1 {
-        margin-top: 40px;
-        margin-left:-180px;
-        font-size: 12px;
-    }
-    
-    /* Adjustments for the second card in Most Popular */
-    
-    .card-8-title {
-        margin-left: -150px; /* Moves content up or down */
-        margin-top: 10px; /* Moves content left or right */
-        text-align: left; /* Puts the text to the left */
-    }
-    
-    .card-price-most-popular-2 {
-        margin-left: -180px;
-        margin-top: 5px;
-    }
-    
-    .card-image-2 {
-        margin-left: 10px;
-        margin-top: 20px;
-    }
-    
-    .card-stars-2 {
-        margin-top: 40px;
-        margin-left:-260px;
-    }
-    
-    /* Adjustments for the third card in Most Popular */
-    
-    .card-9-title {
-        margin-left: -100px; /* Moves content left or right */
-        margin-top: 20px;  /* Moves content up or down */
-        text-align: left; /* Puts the text to the left */
-    }
-    
-    .card-image-3 {
-        margin-left: 10px;
-        margin-top: 30px;
-    }
-    
-    .card-price-most-popular-3 {
-        margin-left: -100px;
-        margin-top: 5px;
-    }
-    
-    .card-stars-3 {
-        margin-top: 40px;
-        margin-left:-190px;
-    }
-    
-    @keyframes shake {
-        0% { transform: translate(1px, 1px) rotate(0deg); }
-        10% { transform: translate(-1px, -2px) rotate(-1deg); }
-        20% { transform: translate(-3px, 0px) rotate(1deg); }
-        30% { transform: translate(3px, 2px) rotate(0deg); }
-        40% { transform: translate(1px, -1px) rotate(1deg); }
-        50% { transform: translate(-1px, 2px) rotate(-1deg); }
-        60% { transform: translate(-3px, 1px) rotate(0deg); }
-        70% { transform: translate(3px, 1px) rotate(-1deg); }
-        80% { transform: translate(-1px, -1px) rotate(1deg); }
-        90% { transform: translate(1px, 2px) rotate(0deg); }
-        100% { transform: translate(1px, -2px) rotate(-1deg); }
-    }
-    
-    /* This section is all for the most popular card englarging and clicking */
-    
-    .animation-card {
-        /* Add transition for smooth enlargement */
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    .animation-card:active {
-        /* Apply shake animation on click */
-        animation: shake 0.5s;
-        animation-iteration-count: 1;
-    }
-    
-    .card-link:hover .animation-card {
-        /* Enlarge card on hover */
-        transform: scale(1.05);
-    }
 }
 
 

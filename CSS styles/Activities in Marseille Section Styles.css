@@ -1,15 +1,8 @@
-
 /* styles for desktop **/
 @media (min-width: 992px) { 
 	body {
     font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
 }
-
-
-    /* Hides an element for view */
-    .hide-desktop {
-        display: none;
-    } 
 
 #activities-section {
     background-color: white;
@@ -193,13 +186,13 @@
 
 }
 
-/* Styles for iphone 8 */
-@media (max-width: 768px) {
+/* Styles for tablets (Apple Air)*/
+@media (max-width: 991px) {
     body {
         font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
     }
     /* Hides an element for view */
-    .hide-phone {
+    .hide-desktop {
         display: none;
     } 
 
@@ -209,7 +202,7 @@
     }
     
     .section-title {
-        margin-left: -117px;
+        margin-left: -483px;
         margin-top: 30px;
         text-align: center;
     }
@@ -309,13 +302,18 @@
     }
 }
 
-/* Styles for tablets*/
-@media (min-width: 768px) and (max-width: 991px) {
+/* Styles for iphone 8 */
+@media (max-width: 768px) {
+
+    .show-phone {
+        display: block;
+    }
+    
     body {
         font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
     }
     /* Hides an element for view */
-    .hide-desktop {
+    .hide-phone {
         display: none;
     } 
 
@@ -325,8 +323,8 @@
     }
     
     .section-title {
-        margin-left: -483px;
-        margin-top: 30px;
+        margin-left: -117px;
+        margin-top: -110px;
         text-align: center;
     }
     

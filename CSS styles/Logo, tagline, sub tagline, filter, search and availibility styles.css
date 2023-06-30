@@ -538,7 +538,7 @@ display: none;
         display: flex;
         gap: 50px; /* This creates a space between the two text items. Adjust as needed. */
         margin-left: -290px; /* This will push the text-container to the right side */
-        margin-top: -390px;
+        margin-top: -364px;
         margin-right: 597px;;
     }
 
