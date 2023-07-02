@@ -1,23 +1,25 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <script src="https://kit.fontawesome.com/c3ee9dbdfd.js" crossorigin="anonymous"></script> <!-- Font Awsome Inport -->
+    <title>Booki</title> <!-- Page Title (Fix W3)-->
+    <script src="https://kit.fontawesome.com/c3ee9dbdfd.js" crossorigin="anonymous"></script> <!-- Font Awsome Import -->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- The 'viewport' meta tag is used for responsive web design. It controls how your web page looks on different devices by setting the viewable area (viewport) of the web browser. -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> <!-- Link to the raleway font from google fonts -->
-    <link rel="stylesheet" type="text/css" href="CSS styles/Logo, tagline, sub tagline, filter, search and availibility styles.css"> <!-- Link to the Logo, tagline, sub tagline, filter, search and availibility styles CSS file -->
-    <link rel="stylesheet" type="text/css" href="CSS styles/accommodation section Styles.css"> <!-- accommodation section Styles file -->
-    <link rel="stylesheet" type="text/css" href="CSS styles/Most Popular Section Styles.css"> <!-- Most Popular Section Styles file -->
-    <link rel="stylesheet" type="text/css" href="CSS styles/Activities in Marseille Section Styles.css"> <!-- Most Popular Section Styles file -->
-    <link rel="stylesheet" type="text/css" href="CSS styles/Footer Styles.css"> <!-- Most Popular Section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS_styles/Logo_tagline_sub_tagline_filter_search_and_availibility_styles.css"> <!-- Link to the Logo, tagline, sub tagline, filter, search and availibility styles CSS file -->
+    <link rel="stylesheet" type="text/css" href="CSS_styles/accommodation_section_Styles.css"> <!-- accommodation section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS_styles/Most_Popular_Section_Styles.css"> <!-- Most Popular Section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS_styles/Activities_in_Marseille_Section_Styles.css"> <!-- Most Popular Section Styles file -->
+    <link rel="stylesheet" type="text/css" href="CSS_styles/Footer_Styles.css"> <!-- Most Popular Section Styles file -->
 
 </head>
 <body>
     
 
 <!-- The div that contains the logo, tagline, sub tagline, filter, search and availibility divs-->
-<section class="logo-tagline-subtagline-filter-search-availibility-container">     
+<section class="logo-tagline-subtagline-filter-search-availibility-container">  
+    <h2 class="visually-hidden">Logo and Search Section</h2> <!-- Section lacks heading. Consider using h2-h6 elements to add identifying headings to all sections, or else use a div element instead for any cases where no heading is needed. Fix W3-->     
     <div class="logo-tagline-wrapper">
         <!-- The logo div -->
         <div class="logo"> <!-- The logo class -->
@@ -40,8 +42,8 @@
              <div class="search-field">
                 <i class="fa-solid fa-location-dot search-icon"></i> <!-- Icon link -->
                 <input type="text" id="search-input" name="town" placeholder="Marseille, France">
-                <button type="submit" id="search-button" class="hide-phone">Search</button> <!-- hidding when the viewport is between (min-width: 767px) and (max-width: 991px) -->
-                <button type="submit" id="search-button" class="hide-desktop"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> <!-- hidding when the viewport is (min-width: 992px)-->
+                <button type="submit" id="search-button-desktop" class="hide-phone">Search</button> <!-- hidding when the viewport is between (min-width: 767px) and (max-width: 991px) -->
+                <button type="submit" id="search-button-phone" class="hide-desktop"><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></button> <!-- hidding when the viewport is (min-width: 992px)-->
               </div>
             </form>
         </div>
@@ -89,7 +91,13 @@
 <!-- Most Popular Section-->
 <section class="Most-Popular-Section">
     <h2 class="grid-title-most-popular">Most Popular</h2> <!-- The headline for the grid -->
-    <h2 class="grid-star"><i class="fa-solid fa-star" style="color: #000000;"></i></h2> <!-- The Star for the grid -->
+
+    <!-- In terms of accessibility, screen readers and other assistive technologies rely on these heading tags to navigate the content and provide an overview to users. 
+        If a heading tag doesn't contain any text, it can be confusing or meaningless to these users. Fix w3-->
+    <h2 class="grid-star">
+        <i class="fa-solid fa-star" style="color: #000000;"></i>
+        <span class="visually-hidden">Star rating</span>
+      </h2> <!-- The Star for the grid -->
 
 
     <!-- Card 1 within the grid -->

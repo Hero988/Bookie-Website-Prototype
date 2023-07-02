@@ -3,6 +3,19 @@ body {
     font-family: 'Raleway', sans-serif; /* This sets Raleway as the default font for the whole website. */
 }
 
+/* The .visually-hidden class is a technique used in CSS to hide elements in a way that they remain accessible to assistive technologies like screen readers.
+Fix W3*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
 /* Style for the logo, tagline, sub tagline, filter, search and availibility divs container */
 .logo-tagline-subtagline-filter-search-availibility-container {
     width: 100%;
@@ -155,7 +168,7 @@ body {
 }
 
 /* This styles the search button */
-#search-button {
+#search-button-desktop {
     padding: 10px 20px; /* Add some padding inside the button */
     background: #0065FC; /* Sets the background color of the button to blue */
     color: white; /* Sets the color of the button text to white */
@@ -670,7 +683,7 @@ display: none;
     }
 
     /* This styles the search button */
-    #search-button {
+    #search-button-phone {
         padding: 10px 20px; /* Add some padding inside the button */
         background: #0065FC; /* Sets the background color of the button to blue */
         color: white; /* Sets the color of the button text to white */

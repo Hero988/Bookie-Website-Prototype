@@ -22,6 +22,19 @@ body {
   height: 720px; /* Set the height to auto, it will expand as much as the content needs */
 }
 
+/* The .visually-hidden class is a technique used in CSS to hide elements in a way that they remain accessible to assistive technologies like screen readers.
+Fix W3*/
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+  }
+
 /* Makes the card display as a flex container and align its items (the image and the text) side by side */
 .flexbox-card {
   background-color: #fff; /* Your desired card color */
