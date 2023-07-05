@@ -20,8 +20,6 @@ Fix W3*/
 .logo-tagline-subtagline-filter-search-availibility-container {
     width: 100%;
     display: flex;
-    justify-content: space-between; /* This aligns the logo to the far left and the text-container to the far right. */
-    align-items: center; /* This will vertically center the items in the container */
 }
 
 /* Style for the logo and the tagline container */
@@ -52,8 +50,8 @@ Fix W3*/
     position: static ; /*  This is the default position value. The element is positioned according to the normal flow of the document.*/
     display: flex;
     gap: 20px; /* This creates a space between the two text items. Adjust as needed. */
-    margin-left: auto; /* This will push the text-container to the right side */
-    margin-top: -240px;
+    margin-left: 900px;
+    margin-top: 30px;
 }
 
 /* The 'text-item' class is used to style the individual text items. */
