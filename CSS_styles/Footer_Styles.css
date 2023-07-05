@@ -4,7 +4,7 @@ body {
 }
 
 .footer-container {
-width: 100%; /* Make sure the container within the footer also takes up the entire width */
+width: 50%; /* Make sure the container within the footer also takes up the entire width */
 display: flex; /* Make the container a flex container */
 justify-content: space-between; /* Distribute columns evenly */
 padding: 20px; /* Add some padding around the footer */
