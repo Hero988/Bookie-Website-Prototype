@@ -61,21 +61,8 @@ Fix W3*/
     position: relative; /* Needed to position the line correctly */
 }
 
-/* Styles for the 'accommodation' text item */
-#accommodation {
-    font-weight: 600; /* Makes the text bold */
-    color: #0065FC; /* Blue color */
-
-}
-
-/* Styles for the 'activities' text item */
-#activities {
-    font-family: 'Raleway', sans-serif; /* This sets Raleway as the font for activities */
-}
-
 /* Styles for the 'accommodation' link */
 #accommodation a {
-    color: inherit; /* Ensures the link inherits the color of the parent element */
     text-decoration: none; /* Removes the underline from the link */
 }
 
@@ -84,8 +71,7 @@ Fix W3*/
     color: inherit; /* Ensures the visited link retains the color of the parent element */
 }
 
-/* Styles for the 'accommodation' blue line */
-#accommodation::before { /* This creates the blue line above the 'accommodation' text */
+.style-for-hover::before { /* This creates the blue line above the 'accommodation/activity' text */
     content: "";
     position: absolute;
     top: -38px; /* Adjust as needed to position the line above the text */
@@ -93,13 +79,21 @@ Fix W3*/
     right: -20px;
     height: 2px; /* Adjust as needed to change the thickness of the line */
     background-color: #0065FC; /* Blue color */
+    visibility: hidden; /* Hide the line */
 }
 
-/* I used the ::before pseudo-element to create the blue line above the "Accommodation" text */
+.style-for-hover:hover {
+    color: #0065FC !important;
+    font-weight: 600; /* Makes the text bold */
+}
+
+/* This creates the blue line above the 'accommodation/activity' text when hovered over*/
+.style-for-hover:hover::before {
+    visibility: visible; /* Show the line */
+}
 
 /* Styles for the 'activities' link */
 #activities a {
-    color: inherit; /* Ensures the link inherits the color of the parent element */
     text-decoration: none; /* Removes the underline from the link */
 }
 
