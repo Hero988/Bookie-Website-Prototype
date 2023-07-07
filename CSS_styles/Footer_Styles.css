@@ -7,7 +7,7 @@ body {
 width: 100%; /* Make sure the container within the footer also takes up the entire width */
 display: flex; /* Make the container a flex container */
 justify-content: space-between; /* Distribute columns evenly */
-padding: 3px; /* Add some padding around the footer */
+padding: 20px; /* Add some padding around the footer */
 }
 
 .footer-background-color {
