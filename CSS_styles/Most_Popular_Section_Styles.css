@@ -192,6 +192,21 @@ Fix W3*/
     transform: scale(1.05);
 }
 
+/* color for the black star in the most popular section */
+.color-for-grid-star {
+    color: #000000;
+}
+
+/* color for filled in (blue) stars in the rating stars */
+.color-for-filled-in-star {
+    color: #005eff;
+}
+
+/* color for empty (grey) stars in the rating stars */
+.color-for-empty-star {
+    color: #c6cedd;
+}
+
 
 /* Styles for tablets (Apple Air)*/
 @media (max-width: 991px) {
@@ -453,7 +468,6 @@ Fix W3*/
     }
     
     .grid-star {
-        font-size: 24px; /* Adjust as needed to change the size of the text */
         text-align: left; /* Puts the text to the left */
         font-weight: 600; /* Makes the text bold */
         margin-left: 300px;
@@ -485,7 +499,7 @@ Fix W3*/
     .card-stars-1 {
         margin-top: 40px;
         margin-left:-190px;
-        font-size: 10px; /* Adjust as needed to change the size of the stars */
+        font-size: 12px; /* Adjust as needed to change the size of the stars */
     }
     
     /* Adjustments for the second card in Most Popular */
@@ -509,7 +523,7 @@ Fix W3*/
     .card-stars-2 {
         margin-top: 40px;
         margin-left:-238px;
-        font-size: 10px; /* Adjust as needed to change the size of the stars */
+        font-size: 12px; /* Adjust as needed to change the size of the stars */
     }
     
     /* Adjustments for the third card in Most Popular */
@@ -533,7 +547,7 @@ Fix W3*/
     .card-stars-3 {
         margin-top: 40px;
         margin-left:-180px;
-        font-size: 10px; /* Adjust as needed to change the size of the stars */
+        font-size: 12px; /* Adjust as needed to change the size of the stars */
     }
     
     @keyframes shake {

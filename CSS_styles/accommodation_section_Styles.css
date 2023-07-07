@@ -172,6 +172,16 @@ body {
     animation-iteration-count: 1;
 }
 
+/* color for filled in (blue) stars in the rating stars */
+.color-for-filled-in-star {
+    color: #005eff;
+}
+
+/* color for empty (grey) stars in the rating stars */
+.color-for-empty-star {
+    color: #c6cedd;
+}
+
 
 /* Styles for tablets (Apple Air)*/
 @media (max-width: 991px) {
