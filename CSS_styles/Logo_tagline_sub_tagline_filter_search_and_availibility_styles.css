@@ -36,8 +36,6 @@ Fix W3*/
     margin-top:-10px
 }
 
-
-
 /* Style for the logo image */
 .logo img{
     width: 100px; /* Width of the logo image */
@@ -62,6 +60,7 @@ Fix W3*/
 /* Styles for the 'accommodation' link */
 #accommodation a {
     text-decoration: none; /* Removes the underline from the link */
+    color: black
 }
 
 /* Styles for the 'accommodation' link when clicked */
@@ -93,6 +92,7 @@ Fix W3*/
 /* Styles for the 'activities' link */
 #activities a {
     text-decoration: none; /* Removes the underline from the link */
+    color: black
 }
 
 /* Styles for the 'activities' link when clicked */
